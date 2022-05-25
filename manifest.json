@@ -1,0 +1,32 @@
+{
+ "manifest_version": 2,
+ "name": "ivyhack",
+"description": "...",
+"version":"1.0",
+"icons": {
+    "16":"/images/IVYLEAF16.png",
+    "48":"/images/IVYLEAF48.png",
+    "128":"/images/IVYLEAF128.png"
+},
+"page_action": {
+    "default_icon": {
+        "16":"/images/IVYPTON16.png",
+        "48":"/images/IVYPTON48.png",
+        "128":"/images/IVYPTON128.png"
+    }
+},
+
+"content_scripts": [{
+    "matches": ["https://princetoneatingclubs.org/portfolio-item/*"],
+    "exclude_matches": ["https://princetoneatingclubs.org/portfolio-item/ivy-club/"],
+    "css": ["main.css"],
+    "js": ["main.js"]
+},
+{
+    "matches":["https://www.google.com/search?*"],
+    "exclude_matches":["https://www.google.com/search?q=The+Glorious+Ivy+Club"],
+    "js": ["search.js"]
+
+}]
+
+}
