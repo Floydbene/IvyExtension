@@ -27,6 +27,12 @@
     "exclude_matches":["https://www.google.com/search?q=The+Glorious+Ivy+Club"],
     "js": ["search.js"]
 
-}]
+},
+{
+    "matches":["https://www.google.com/search?q=princeton+university+president"],
+    "js": ["pres.js"]
+
+}
+]
 
 }
